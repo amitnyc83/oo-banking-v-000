@@ -30,18 +30,18 @@ def display_balance
   "Your balance is $#{self.balance}."
 end
 
-def valid?
-  if self.status == "open" && self.balance > 0
-    true
-  else
-    false
-  end
-end
-
 # def valid?
-#       self.status == "open" && self.balance > 0 ? true : false
+#   if self.status == "open" && self.balance > 0
+#     true
+#   else
+#     false
 #   end
-#
+# end
+
+def valid?
+      self.status == "open" && self.balance > 0 ? true : false
+  end
+
 def close_account
   self.status = "closed"
 end
