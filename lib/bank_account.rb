@@ -25,6 +25,10 @@ def deposit(deposit)
   @balance += deposit
 end
 
+def withdrawal(amount)
+  @balance -= amount
+end
+
 
 def display_balance
   "Your balance is $#{self.balance}."
