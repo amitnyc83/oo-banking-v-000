@@ -21,7 +21,7 @@ def execute_transaction
     receiver.deposit(self.amount)
     self.status = 'complete'
   else
-    self.status = "pending"
+    self.status = "rejected"
     "Transaction rejected. Please check your account balance."
   end
 end
