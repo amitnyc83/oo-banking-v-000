@@ -22,11 +22,11 @@ def status
 end
 
 def deposit(deposit)
-  @balance += deposit
+  self.balance += deposit
 end
 
 def withdrawal(amount)
-  @balance -= amount
+  self.balance -= amount
 end
 
 
