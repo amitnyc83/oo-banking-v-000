@@ -3,14 +3,14 @@ require 'pry'
 
 class BankAccount
 
-attr_accessor :balance
+attr_accessor :balance, :status
 
-attr_reader  :status, :name
+attr_reader   :name
 
-def initialize(name)
+def initialize(name, @status = "open", @balance = 1000)
   @name = name
-  @balance = 1000
-  @status = "open"
+  @balance = balance
+  @status = status
 end
 
 def balance
