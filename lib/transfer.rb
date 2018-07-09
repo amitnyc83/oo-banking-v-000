@@ -28,7 +28,7 @@ end
 
 def reverse_transfer
   if valid? && sender.balance > amount && self.status == 'complete'
-    sender.depoit(self.amount)
+    sender.deposit(self.amount)
     receiver.withdrawal(self.amount)
     self.status = "complete"
   else
